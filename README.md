@@ -1,4 +1,4 @@
-# Dense Monocular Depth Estimation for Stereoscopic Vision Based on Pyramid Transformer and Multi-Scale Feature Fusion
+# Deep-learning-based pyramid-transformer for localized porosity analysis of hot-press sintered ceramic paste
 
 ![pytorch](https://img.shields.io/badge/pytorch-v1.10-green.svg?style=plastic)
 ![wandb](https://img.shields.io/badge/wandb-v0.12.10-blue.svg?style=plastic)
@@ -16,7 +16,7 @@
 
 <!-- Recent works have shown that in the real world, humans
 rely on the image obtained by their left and right eyes in order to estimate depths of surrounding objects. Thus, -->
->Stereoscopic display technology plays a significant role in industries, such as film, television and autonomous driving. The accuracy of depth estimation is crucial for achieving high-quality and realistic stereoscopic display effects. In addressing the inherent challenges of applying Transformers to depth estimation, the Stereoscopic Pyramid Transformer-Depth (SPT-Depth)
+>Scanning Electron Microscope (SEM) is a crucial tool for studying microstructures of ceramic materials. However, the current practice heavily relies on manual efforts to extract porosity from SEM images. To address this issue, we propose PSTNet (Pyramid Segmentation Transformer Net) for grain and pore segmentation in SEM images, which merges multi-scale feature maps through operations like recombination and upsampling to predict and generate segmentation maps.
 
 
 ## :pushpin: Requirements
@@ -31,7 +31,7 @@ You can first download one of the models from the model:
 
 Get the links of the following models:
 
-+ [```SPT-large.p```]
++ [```PST-large.p```]
 + Other models coming soon...
 
 And put the ```.p``` file into the directory ```models/```. After that, you need to update the ```config.json```  according to the pre-trained model you have chosen to run the predictions (this means that if you load a depth-only model, then you have to set ```type``` to ```depth``` for example ....
@@ -60,4 +60,4 @@ After that, you can simply run the training script: ```python train.py```
 
 ## :scroll: Citations
 
-Our work is based on Ranflt et al. Unlike them we will focus on autostereoscopic vision. This research is based on an 8K naked eye 3D project, and all subsequent code will be given after the corresponding patents are filed, thank you for your support!
+Our work is based on the research of Ranflt et al. Unlike them, we will focus on ceramic semantic segmentation. Thank you for your support!
